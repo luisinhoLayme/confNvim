@@ -13,6 +13,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+"Sementic color para cambiar de color a las variables
+:nnoremap <Leader>s :SemanticHighlightToggle<cr>
+
 "diagnostics
 nnoremap <Leader>dia  :<C-u>CocList diagnostics<cr>
 nnoremap <leader>kp :let @*=expand("%")<CR>
@@ -27,7 +30,7 @@ xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
 
 " Activando el plugin easymotion
-nmap <Leader>s <Plug>(easymotion-s2)
+" nmap <Leader>s <Plug>(easymotion-s2)
 " Moverse al buffer siguiente con <líder> + k
  nnoremap <leader>k :bnext<CR>
 
