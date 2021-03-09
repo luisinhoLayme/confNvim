@@ -18,6 +18,9 @@ let opts = {
     call nvim_open_win(buf, v:true, opts)
 endfunction
 
+" configuracion Semantic hightlight
+autocmd FileType javascript setlocal iskeyword+=$
+
 " Configuracion de pro.
 
  let $FZF_DEFAULT_OPTS .= ' --inline-info'
@@ -70,6 +73,23 @@ highlight SignifySignChange ctermfg=black ctermbg=yellow guifg=#000000 guibg=#ff
 " aun no se como funcion aeso xd
 let g:coc_global_extensions = ['coc-pairs', 'coc-tslint', 'coc-tsserver']
  command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" highlight cursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" highlight con enter seleccionamos y con otro enter deseleccionamos
+let g:highlighting = 0
+function! Highlighting()
+    if g:highlighting == 1 && @/ =~ '^\\<'.expand('<cword>').'\\>$'
+        let g:highlighting = 0
+        return ":silent nohlsearch\<CR>"
+    endif
+    let @/ = '\<'.expand('<cword>').'\>'
+    let g:highlighting = 1
+    return ":silent set hlsearch\<CR>"
+  endfunction
+nnoremap <silent> <expr> <CR> Highlighting()
+
 
 " HTML, JSX
 "let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'

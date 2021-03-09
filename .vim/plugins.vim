@@ -5,6 +5,7 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'kabbamine/vcoolor.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'jaxbot/semantic-highlight.vim'
 
 "IDE
 Plug 'Yggdroot/indentLine'
@@ -18,7 +19,9 @@ Plug 'airblade/vim-rooter'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'easymotion/vim-easymotion'
+" Plug 'easymotion/vim-easymotion'
+Plug 'ap/vim-css-color'
+Plug 'jbgutierrez/vim-better-comments'
 
 
 "typing
