@@ -30,6 +30,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-tmux-navigator' "tmux
 Plug 'elzr/vim-json'
+"los giguientes funcionan los dos para lso snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 "git 
 Plug 'mhinz/vim-signify'

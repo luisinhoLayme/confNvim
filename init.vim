@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+" para las tabulaciones.
+>>>>>>> c32cbc5df6d950e10ec317586c5940a0baae9c61
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
