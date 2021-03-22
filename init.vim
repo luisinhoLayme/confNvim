@@ -1,4 +1,3 @@
-
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -25,7 +24,7 @@ filetype plugin indent on
 set colorcolumn=120
 highlight ColoColumn ctermbg=0 guibg=lightgrey
  
-"wrap text
+"wrap text xd
 set wrap
 "set nowrap
 
