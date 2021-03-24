@@ -80,6 +80,22 @@ snippet i "import module"
 import ${1} from '${2}'
 endsnippet
 
+#mio
+snippet ic "import module components"
+import ${1} from './components/${2}'
+endsnippet
+
+#mio
+snippet impf "import File from './File'" b
+import $1 from '${2:./}${3:$1}'
+endsnippet
+
+#mio
+snippet te "jsx block tag" 
+<${2:div}>
+	${3}
+</${2/(\w+).*/$1/}>
+endsnippet
 
 snippet fm "formatted message"
 ${1}: <FormattedMessage id='${2}.${1/(\w+).*/$1/}' defaultMessage='${3}' />,
@@ -102,6 +118,20 @@ const ${1} = (props) => {
 		</${2/(\w+).*/$1/}>
 	)
 }
+endsnippet
+
+snippet rafce "Create a react components arroy"
+import React from 'react'
+
+const ${1:`!v expand('%:t:r')`} = () => {
+	return (
+		<${2:div}>
+			${3}
+		</${2/(\w+).*/$1/}>
+	)
+}
+
+export default $1;
 endsnippet
 
 snippet rc "react component"

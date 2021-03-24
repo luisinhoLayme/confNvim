@@ -2,9 +2,9 @@
 =======
 " para las tabulaciones.
 >>>>>>> c32cbc5df6d950e10ec317586c5940a0baae9c61
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 set number
